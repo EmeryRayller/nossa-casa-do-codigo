@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: nossaCasaDoCodigo
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/casadocodigomicronaut
+    driverClassName: com.mysql.cj.jdbc.Driver
+    username: ${DB_USER:root}
+    password: ${DB_PASS:zerin3053}
+    dialect: MySQL
+jpa.default.properties.hibernate.hbm2ddl.auto: update
+
+
