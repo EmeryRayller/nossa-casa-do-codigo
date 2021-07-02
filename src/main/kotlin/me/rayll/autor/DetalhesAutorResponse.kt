@@ -1,8 +1,8 @@
 package me.rayll.autor
 
-class DetalhesAutorResponse(autor: Autor){
+import io.micronaut.core.annotation.Introspected
+import javax.persistence.Embedded
 
-    val nome = autor.nome
-    val email = autor.email
-    val descricao = autor.descricao
+class DetalhesAutorResponse(val nome: String, val email: String, val descricao: String){
+
 }

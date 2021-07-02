@@ -20,7 +20,7 @@ class AtualizarAutor(val autorRepository: AutorRepository) {
             this.nome = autor.nome
             this.email = autor.email
             this.descricao = autor.descricao
-            return HttpResponse.ok(DetalhesAutorResponse(this))
+            return HttpResponse.ok(DetalhesAutorResponse(this.nome, this.email, this.descricao))
         }
     }
 }
